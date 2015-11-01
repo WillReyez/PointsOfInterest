@@ -14,18 +14,31 @@ import retrofit.client.OkClient;
 import retrofit.client.Response;
 
 /**
+ * This is the adapter to get the data.
+ *
  * Created by Victor Tellez on 29/10/2015.
  */
 public class DataRestAdapter {
 
     public static final String BASE_URL_DATA = "YYY";
 
+    /**
+     * Callback
+     */
     private OnCustomCallback onCustomsCallback;
 
+    /**
+     * Constuctor.
+     *
+     * @param onCustomsCallback
+     */
     public DataRestAdapter(OnCustomCallback onCustomsCallback) {
         this.onCustomsCallback = onCustomsCallback;
     }
 
+    /**
+     * The request interceptor.
+     */
     RequestInterceptor requestInterceptor = new RequestInterceptor() {
 
         @Override
@@ -36,6 +49,9 @@ public class DataRestAdapter {
         }
     };
 
+    /**
+     * Gets the points.
+     */
     public void getPointsAsync() {
 
         OkHttpClient httpClient = new OkHttpClient();
@@ -69,6 +85,11 @@ public class DataRestAdapter {
         service.getPointsJson(callback);
     }
 
+    /**
+     * Gets the details.
+     *
+     * @param id    of the detail
+     */
     public void getDetailAsync(String id) {
 
         OkHttpClient httpClient = new OkHttpClient();
