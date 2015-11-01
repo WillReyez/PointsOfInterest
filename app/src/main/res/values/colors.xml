@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Generic -->
+    <color name="myPrimaryColor">#2196F3</color>
+    <color name="myPrimaryDarkColor">#1976D2</color>
+    <color name="myPrimaryLightColor">#2196F3</color>
+    <color name="myAccentColor">#2196F3</color>
+    <color name="myDrawerBackground">#F2F2F2</color>
+    <color name="myWindowBackground">#DEDEDE</color>
+    <color name="myTextPrimaryColor">#FFFFFF</color>
+    <color name="myNavigationColor">#000000</color>
+    <color name="selected_gray">#ffdbdbdb</color>
+
+    <!-- Item List -->
+    <color name="item_list_text_color">#666</color>
+    <color name="list_divider_color">#50666666</color>
+
+    <!-- Map -->
+    <color name="market_info_text">#4d4d4d</color>
+</resources>

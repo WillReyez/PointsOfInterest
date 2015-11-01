@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Generic -->
+    <string name="app_name">Points of Interest</string>
+
+    <!-- Splash activity -->
+    <string name="loading">Loading...</string>
+    <string name="error_downloading_points">Error downloading the points from the server.</string>
+
+    <!-- Map activity -->
+    <string name="menu_map_activity">Point list</string>
+    <string name="details_downloading">The details are being downloading</string>
+    <string name="details_ready">The details are ready</string>
+    <string name="no_connection">Check the connection please!</string>
+    <string name="activate_location">Activate your location to show it in the map</string>
+    <string name="error_loading_details">Error loading the details from the database.</string>
+
+    <!-- List activity -->
+    <string name="search_hint">Search</string>
+    <string name="search_filter">Filter</string>
+    <string name="action_search">Search</string>
+    <string name="error_loading_points">Error loading the points from the database.</string>
+
+    <!-- No connection dialog -->
+    <string name="no_connection_dialog_title">No connection</string>
+    <string name="no_connection_dialog_text">There is not connection. This app need to download some data before start</string>
+    <string name="no_connection_dialog_cancel_button">Cancel</string>
+    <string name="no_connection_dialog_go_to_button">Go to settings</string>
+
+</resources>

@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Splash activity -->
+    <dimen name="splash_text_margin_top">100dp</dimen>
+    <dimen name="splash_text_size">22sp</dimen>
+
+    <!-- Map activity -->
+    <dimen name="floating_button_margin_bottom">60dp</dimen>
+    <dimen name="floating_button_margin_right">20dp</dimen>
+    <dimen name="sliding_panel_shadow_size">4dp</dimen>
+    <dimen name="slidding_panel_position_y">50dp</dimen>
+    <!-- Map -->
+    <dimen name="market_info_container_padding">5dp</dimen>
+    <dimen name="market_info_text_container_padding">5dp</dimen>
+    <dimen name="market_info_text_size">12sp</dimen>
+
+    <!-- List activity -->
+    <dimen name="toolbar_inset_value">0dp</dimen>
+    <dimen name="divider_height">1dp</dimen>
+    <dimen name="edit_text_width">250dp</dimen>
+    <!-- Item List -->
+    <dimen name="item_list_text_padding">20dp</dimen>
+    <dimen name="item_list_text_size">20sp</dimen>
+    <dimen name="item_list_height">80dp</dimen>
+
+</resources>

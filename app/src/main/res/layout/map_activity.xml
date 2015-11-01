@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_parent_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/map_toolbar_actionbar"
+        layout="@layout/toolbar_map_activity" />
+
+    <com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:sothree="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/sliding_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/map_toolbar_actionbar"
+        android:gravity="bottom"
+        sothree:umanoPanelHeight="@dimen/slidding_panel_position_y"
+        sothree:umanoShadowHeight="@dimen/sliding_panel_shadow_size">
+
+        <LinearLayout
+            android:id="@+id/info_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/map_toolbar_actionbar"
+            android:orientation="vertical">
+
+            <fragment
+                android:id="@+id/map_fragment"
+                class="com.google.android.gms.maps.MapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/detail_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:clickable="true"
+            android:background="@android:color/white">
+            <!-- detail title -->
+            <TextView
+                android:id="@+id/detail_info0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="20dp" />
+            <!-- detail address -->
+            <TextView
+                android:id="@+id/detail_info1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detail_info0"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="#4d4d4d"
+                android:textSize="14sp" />
+            <!-- detail transport -->
+            <TextView
+                android:id="@+id/detail_info2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detail_info1"
+                android:layout_marginTop="10dp"
+                android:textColor="#4d4d4d"
+                android:textSize="12sp" />
+            <!-- detail description -->
+            <TextView
+                android:id="@+id/detail_info3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detail_info2"
+                android:layout_marginTop="10dp"
+                android:lineSpacingMultiplier="1.2"
+                android:textColor="#999"
+                android:textSize="12sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detail_info3"
+                android:orientation="vertical">
+                <!-- detail email -->
+                <TextView
+                    android:id="@+id/detail_info4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoLink="all"
+                    android:linksClickable="true"
+                    android:textColor="#999"
+                    android:textSize="12sp"
+                    android:layout_marginTop="20dp" />
+                <!-- detail phone -->
+                <TextView
+                    android:id="@+id/detail_info5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoLink="all"
+                    android:linksClickable="true"
+                    android:textColor="#999"
+                    android:textSize="12sp"
+                    android:layout_marginTop="20dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+</RelativeLayout>
