@@ -23,7 +23,8 @@ next time it is requested.
 JUnit Testing
 
 # Next steps
-[The Clean Architecture](https://blog.8thlight.com/uncle-bob/2012/08/13/the-clean-architecture.html)
+* [The Clean Architecture](https://blog.8thlight.com/uncle-bob/2012/08/13/the-clean-architecture.html)
+* [Architecting Android - The Clean Way](http://fernandocejas.com/2014/09/03/architecting-android-the-clean-way/)
 
 
 
